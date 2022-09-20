@@ -2,4 +2,4 @@
 
 ## Summary
 
-This repository contains all of the notes taken by [Sarah Campbell](https://github.com/campbell46) for the [Lighthouse Labs](https://www.lighthouselabs.ca) Web Development Bootcamp.
+This repository contains all of the notes taken by [Sarah](https://github.com/campbell46) for the [Lighthouse Labs](https://www.lighthouselabs.ca) Web Development Bootcamp.
