@@ -1,7 +1,7 @@
 # Callbacks
 
 ## Resources
-- Video: https://vimeo.com/673351015/8403bec0fe
+- Video: https://vimeo.com/755267954/6dce42eea4
 - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w2d2-full-w1d4-callbacks
 
 ### Functions as values
