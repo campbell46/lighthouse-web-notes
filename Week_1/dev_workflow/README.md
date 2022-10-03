@@ -1,6 +1,6 @@
-## Lecture Notes
+### Lecture Notes
 
-# The Dev Workflow
+## The Dev Workflow
 Video ----------------------> https://vimeo.com/752684027/e9103393f3
 
 Welcome to your second day of bootcamp and your first day of lecture !!!
