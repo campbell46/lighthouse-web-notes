@@ -7,4 +7,8 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
 ### Table of Contents
 
 * [Week 1](/Week_1)
-  * [Day 1](/Week_1/Day_1)
+  * [Welcome and Intros](/Week_1/welcome_intros)
+  * [Dev Workflow](/Week_1/dev_workflow)
+* [Week 2](/Week_2)
+  * [Objects In JS](/Week_2/objects-in-JS)
+  * [Callbacks](/Week_2/callbacks)
