@@ -1,22 +1,22 @@
 ## Lecture Notes
 
 # The Dev Workflow
-- Video ----------------------> https://vimeo.com/752684027/e9103393f3
+Video ----------------------> https://vimeo.com/752684027/e9103393f3
 
 Welcome to your second day of bootcamp and your first day of lecture !!!
 
-## Who am I?
-- Vasiliy Klimkin
+### Who am I?
+- **Vasiliy Klimkin**
   - I go by Vasiliy, Vas, ( and sometimes Morpheous)
   - Tried to do Comp Sci @YorkU, ended up graduating from Seneca@York
   - Grduate of LHL Bootcamp May 29th 2017 Cohort!!
   - Loving the Web Coder Life, interested in Unity Programming, and Hardware
 
 
-## Todays Lecture: The workflow of a dev
+### Todays Lecture: The workflow of a dev
 We will be looking into from start to finish, the entire dev workflow that you will be following throughout the bootcamp AND throughout your developer lives.
 
-#### The problem
+### The problem
 We are tasked to create a program that takes in any number of command line arguments which will be numbers, and then add them toghether in a giant sum.
 
 ### Where do we start ??
@@ -33,14 +33,15 @@ Once the initialization is done, we can begin work. Files that are tracked by gi
 - **Un-tracked** A file that is in your folder, and git is notifying you of it but is ignoring what to do with it for now ( Usually the files are in red )
 - **Staged** You've used git add to include the file on the next commit. You can also say staged files are in the commit index or staging area. (Usually the files are in green )
 - **Commited** A commit has been created with the added files; this file is now actively under version control. Note that the file hasn't been sent to Github.
+
 **!!ALWAYS COMMIT AS OFTEN AS POSSIBLE!!**
 
 This is the best way to keep your work in progress saved up and have changes done incrementaly. If you ever need to revert a change you can always go back a commit kind of like going back in time. So please please please, commit often!
 
-## The Workflow We Followed
+### The Workflow We Followed
 git clone/git init --> WORK WORK WORK --> git status (to check what files we worked on) --> git add .(to stage ALL files) --> git commit --> git push (so our work goes into github)
 
-## How to Tackle a Problem
+### How to Tackle a Problem
 Our problem we will be working through is this: We want to make a program, that takes in unlimited number of arguments (command line arguments) and prints out the sum of those arguments. Skip any non-whole numbers and DO NOT skip negative values.
 
 **Steps to tackle this problem**
@@ -63,24 +64,33 @@ We need to write a program that:
   ```js
   Number.isInteger(parcedNum);
   ```
+
 - How do we get the command line arguments?
-```js
-process.argv
-```
+
+  ```js
+  process.argv
+  ```
+
 - How do we loop through an an array?
-```js
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
-}
-```
+
+  ```js
+  for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+  }
+  ```
+
 - Does the command line give us a string or an number?
-    ```js
-    console.log(process.argv)
-    ```
+
+  ```js
+  console.log(process.argv)
+  ```
+
 - How do we convert string to number?
-```js
-    parseInt(numberArray[i]);
-```
+
+  ```js
+  parseInt(numberArray[i]);
+  ```
+
 **3:** Coding Time!! With Increments!!
 
 console.log <--- Your new Partner in Crime!!! This is the best debugging tool that you can ask for. It will print any kind of value to the screen. Its also the best way to keep track of your program's logic.
@@ -93,11 +103,12 @@ IF i can get the command line arguments then I can probably loop through them.
 
 IF I can loop through them I must be able to add them toghether. etc etc etc.
 
-## !!!! Do not try to do 'code golf' !!!! ##
+### !!!! Do not try to do 'code golf' !!!! ##
 
 Code golfing is a term where you are trying to solve a problem with the least amount of lines. Even though it maybe very nice to solve something in a 1 lines, sometimes in becomes unreadable, or unmaintainable.
 
 **Exibit A**
+
 ```js
 const addNumbers = function (numberArray) {
   return numberArray.reduce((acc, num) => Number.isInteger(parseInt(num)) ? parseInt(num) + parseInt(acc) : acc);
