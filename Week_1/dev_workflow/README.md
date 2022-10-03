@@ -1,216 +1,106 @@
-# Callbacks
+## Lecture Notes
 
-## Resources
-- Video: https://vimeo.com/673351015/8403bec0fe
-- Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w2d2-full-w1d4-callbacks
+# The Dev Workflow
+- Video ----------------------> https://vimeo.com/752684027/e9103393f3
 
-### Functions as values
+Welcome to your second day of bootcamp and your first day of lecture !!!
 
-Functions are Objects.  So, we can interact with them like Objects.
+## Who am I?
+- Vasiliy Klimkin
+  - I go by Vasiliy, Vas, ( and sometimes Morpheous)
+  - Tried to do Comp Sci @YorkU, ended up graduating from Seneca@York
+  - Grduate of LHL Bootcamp May 29th 2017 Cohort!!
+  - Loving the Web Coder Life, interested in Unity Programming, and Hardware
 
+
+## Todays Lecture: The workflow of a dev
+We will be looking into from start to finish, the entire dev workflow that you will be following throughout the bootcamp AND throughout your developer lives.
+
+#### The problem
+We are tasked to create a program that takes in any number of command line arguments which will be numbers, and then add them toghether in a giant sum.
+
+### Where do we start ??
+We will start with something that can track our progress throughout this problem. Enter GIT. GIT is a Version Control System (VCS) which allows us to keep track of changes to our projects and efficiently collaborate with others on the work.
+
+Imagine you'd be working on some awesome code, where you are trying launch the rocket. A few hours ago you have figured out, how to make the ignition turn on, but you are having struggles figuring out how to send the fuel to the boosters. While messing around you ended up breaking the ignition and the trajectory course system on the rocket. GIT is a tool that can help you revert your project back to the semi working state, so you can start again from a good point, rather than figuring out whats exactly broken.
+
+If you are into video games, GIT is basically a check point save system.
+
+The first thing we do when we start a brand new project is we git init which initializes git in that folder. This means git will watch for file changes, added files, and removed files.
+
+Once the initialization is done, we can begin work. Files that are tracked by git can be in 4 different states.
+
+- **Un-tracked** A file that is in your folder, and git is notifying you of it but is ignoring what to do with it for now ( Usually the files are in red )
+- **Staged** You've used git add to include the file on the next commit. You can also say staged files are in the commit index or staging area. (Usually the files are in green )
+- **Commited** A commit has been created with the added files; this file is now actively under version control. Note that the file hasn't been sent to Github.
+**!!ALWAYS COMMIT AS OFTEN AS POSSIBLE!!**
+
+This is the best way to keep your work in progress saved up and have changes done incrementaly. If you ever need to revert a change you can always go back a commit kind of like going back in time. So please please please, commit often!
+
+## The Workflow We Followed
+git clone/git init --> WORK WORK WORK --> git status (to check what files we worked on) --> git add .(to stage ALL files) --> git commit --> git push (so our work goes into github)
+
+## How to Tackle a Problem
+Our problem we will be working through is this: We want to make a program, that takes in unlimited number of arguments (command line arguments) and prints out the sum of those arguments. Skip any non-whole numbers and DO NOT skip negative values.
+
+**Steps to tackle this problem**
+
+**1:** Understand what the question is asking
+
+The problem in itself doesnt tell us much so we will try to make the instructions alittle bit more verbouse so it can gives us hints.
+
+We need to write a program that:
+
+- that takes in UNLIMITED number of arguments. (What is a command line arguments?)
+- and prints out the sum of thouse arguments. <---- ELABORATION: go through each argument ( maybe loop? ) and add them up.
+- Skip any non-whole numbers
+- dont skip negative values
+
+**2:** Research The Unknowns
+
+- How can we tell if it's a whole number?
+
+  ```js
+  Number.isInteger(parcedNum);
+  ```
+- How do we get the command line arguments?
 ```js
-//addTwo is a variable that holds a _reference_ to a function.
-const addTwo = function(num) {
-  return num + 2;
-}
-
-// Functions are stored in variables, so we can assign them into other variables
-const addDeux = addTwo; //alias `addTwo` as `addDeux`.
-console.log(addTwo);
-console.log(addDeux);
-
-// Functions can be anonymous!
-const functions = [
-    function(num) { return num + 2; }, // this function has no name!
-    function(num) { return num * 2; }];
-
-for (fx of functions) {
-    console.log(fx); // but we can still access it's reference
-    console.log(fx(3));
-}
-
-// Just like how we can store them in objects
-const functions = {
-    addTwo: function(num) { return num + 2; }
-}
-functions.timesTwo = function(num) {return num *= 2; };
-
-for (key in functions) {
-    console.log(functions[key](3));
+process.argv
+```
+- How do we loop through an an array?
+```js
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
 }
 ```
-
-### Function Invocation
-
-Invoking a function, or _calling_ a function happens **only when we use `()`**.
-
+- Does the command line give us a string or an number?
+    ```js
+    console.log(process.argv)
+    ```
+- How do we convert string to number?
 ```js
-// Assigning a function into another variable
-const addDeux = addTwo; 
-
-// Invoking a function and assigning its return value into a variable
-const result = addTwo(3);
-
+    parseInt(numberArray[i]);
 ```
+**3:** Coding Time!! With Increments!!
 
-### Passing Functions to Functions
+console.log <--- Your new Partner in Crime!!! This is the best debugging tool that you can ask for. It will print any kind of value to the screen. Its also the best way to keep track of your program's logic.
 
-Functions are just Objects, so we can call a function with another function as an argument!
+So Tacking any problem head on can prove to be difficult. I use this method to help me get started.
 
+**IF I CAN DO X THEN I CAN DEFINETLY DO Y**
+
+IF i can get the command line arguments then I can probably loop through them.
+
+IF I can loop through them I must be able to add them toghether. etc etc etc.
+
+## !!!! Do not try to do 'code golf' !!!! ##
+
+Code golfing is a term where you are trying to solve a problem with the least amount of lines. Even though it maybe very nice to solve something in a 1 lines, sometimes in becomes unreadable, or unmaintainable.
+
+**Exibit A**
 ```js
-const addTwo = function(num) {
-    return num + 2;
-}
-
-const doSomething = function(callback) {
-    return callback(2);
-}
-
-doSomething(console.log) // => 2
-doSomething(addTwo) // => 4
-```
-
-
-```js
-// But we can do something first
-const addTwo = function(num) {
-    return num + 2;
-}
-
-const sumThenApplyCallback = function(nums, callback) {
-    let sum = 0;
-    for (num of nums) {
-        sum += num;
-    }
-    console.log("sum", sum);
-    return callback(sum);
-}
-
-const result = sumThenApplyCallback([1, 2, 3], addTwo); 
-console.log("result", result);
-
-> sum 6
-> result 8
-```
-
-Functions that are passed to functions are called `callbacks`. In other words, a callback is a function that gets passed to another function to be invoked in a function.
-
-### Arrow functions
-
-- Arrow functions are a syntactic sugar for creating a limited function
-- Arrow functions inherit context from their definition location - so aren't appropriate to use as `methods` on objects.
-- Arrow functions are mostly designed for use as callbacks
-
-
-```js
-const addTwo = function(num) {
-    return num + 2;
-}
-
-// In the simplest view, just remove `function` keyword and add `fat arrow`
-const addTwo = (num) => {
-    return num + 2;
-}
-
-// For functions with exactly one parameter, then `()`s are optional
-const addTwo = num => {
-    return num + 2;
-}
-
-// For one-line functions, the return statement becomes implicit
-const addTwo = num => num + 2
-
-// For functions with zero parameters, `()` is mandatory
-const alwaysTrue = () => true;
-
-// For functions with multiple parameters. `()` are also mandatory
-const addTwoNumbers = (num1, num2) => num1 + num2;
-
-```
-
-### Arrow functions can't be used as methods
-
-```js
-const car = {
-    maxFuelLevel: 100,
-    fuelLevel: 10,
-    displayFuelLevel: function () {
-        console.log(`Currentley fueled at ${this.fuelLevel}L ${this.maxFuelLevel / this.fuelLevel}% of max`);
-    }
+const addNumbers = function (numberArray) {
+  return numberArray.reduce((acc, num) => Number.isInteger(parseInt(num)) ? parseInt(num) + parseInt(acc) : acc);
 }
 ```
-
-With regular `function` declaration syntax, the context of the function is the `car` object.
-
-```js
-const car = {
-    maxFuelLevel: 100,
-    fuelLevel: 10,
-    displayFuelLevel: () => {
-        console.log(`Currentley fueled at ${this.fuelLevel}L ${this.maxFuelLevel / this.fuelLevel}% of max`);
-    }
-}
-```
-With an arrow function, the context of the function is the `module` - _not_ the `car` object.
-
-
-### Array iteration functions
-
-There are a few useful array iteration functions that we should know:
- - filter 
- - map
- - reduce
- - forEach
-
-Filter returns an array with only the values that pass a conditional check
-
-```js
-const evens = [1, 2, 3, 4].filter(num => num % 2 === 0);
-console.log(evens); // > [2, 4]
-
-const properNouns = ["Ian", "cat", "dog", "Taiwo"].filter(name => name[0].toUpperCase() === name[0]);
-console.log(properNouns); // > ["Ian", "Taiwo"]
-```
-
-How could we implement our own version of `filter`?
-
-```js
-// accepts a callback that returns a boolean
-const filter = function (array, callback) {
-    const result = [];
-    for (const item of array) {
-        if (callback(item)) {
-            result.push(item);
-        } else {
-            // DO NOTHING
-        }
-    }
-    return result;
-}
-```
-
-
-Map returns an array with a modification applied to each array item
-
-```js
-const doubled = [1, 2, 3, 4].map(num => num * 2);
-console.log(doubled);
-
-const capitalized = ["ian", "dog", "cat", "Taiwo"].map(name => name[0].toUpperCase() + name.slice(1));
-```
-
-ForEach is just like a `for ... of` loop, but the loop body is a callback:
-
-```js
-// To print each value
-[1, 2, 3, 4].forEach(num => console.log(num));
-```
- - ** note ** I discourage the use of `forEach`, because it has several disadvantages compared to a regular loop, and it's semantics often lead to unexpected bugs!
-
-Reduce is a very fundamental loop iteration function, with which we can build all of the other functions.  It is _very powerful_, and _very generic_, and as a result it can be rather confusing.
-
- ```js
-[1, 2, 3].reduce((accum, num) => num + accum, 0);
-
-[1, 2, 3].reduce((accum, num) => num > 1 ? accum.concat(num) : accum, [])
- ```
+Sometimes going into refactoringis too much! Ask me about this in a few weeks and i wont remember why i did this or how i did it!
