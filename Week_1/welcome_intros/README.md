@@ -6,10 +6,10 @@ This is your very first class/lecture. It will help you get acquainted with ever
 
 You will ...
 
--Get to know your classmates
--Get to know our staff
--Learn more about the curriculum and our educational approach
--Discuss strategies to be successful in bootcamp
+- Get to know your classmates
+- Get to know our staff
+- Learn more about the curriculum and our educational approach
+- Discuss strategies to be successful in bootcamp
 
 ### Details
 
