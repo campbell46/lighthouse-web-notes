@@ -12,3 +12,5 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
 * [Week 2](/Week_2)
   * [Objects In JS](/Week_2/objects-in-JS)
   * [Callbacks](/Week_2/callbacks)
+* [Week 3](/Week_3)
+  * [TDD with Mocha & Chai](/Week_3/TDD_mocha_chai)
