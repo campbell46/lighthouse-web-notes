@@ -19,3 +19,6 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
 * [Week 5](/Week_5)
   * [Networking with TCP and HTTP](/Week_5/Networking_TCP_HTTP)
   * [Promises](/Week_5/Promises)
+* [Week 6](/Week_6)
+  * [Networking with TCP and HTTP](/Week_6/Web_Servers)
+  * [Promises](/Week_6/CRUD_Express)
