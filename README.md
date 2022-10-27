@@ -14,3 +14,8 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
   * [Callbacks](/Week_2/callbacks)
 * [Week 3](/Week_3)
   * [TDD with Mocha & Chai](/Week_3/TDD_mocha_chai)
+* [Week 4](/Week_4)
+  * [Asynchronous Control Flow](/Week_4/async_control_flow)
+* [Week 5](/Week_5)
+  * [Networking with TCP and HTTP](/Week_5/Networking_TCP_HTTP)
+  * [Promises](/Week_5/Promises)
