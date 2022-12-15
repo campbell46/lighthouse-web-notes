@@ -1,0 +1,17 @@
+<%- include('partials/_head.ejs') %>
+
+  <h2>Welcome to the <strong>HIDDEN</strong> Page!</h2>
+
+  <p>
+    You are signed in with the e-mail:
+    <%= email %>
+  </p>
+
+  <form method="POST" action="/sign-out">
+    <button type="submit">
+      Sign Out
+    </button>
+  </form>
+
+</body>
+</html>
