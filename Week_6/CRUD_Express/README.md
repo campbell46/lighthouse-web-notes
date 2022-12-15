@@ -1,7 +1,7 @@
 # W03D02 - CRUD with Express
 
 ## Resources
- - Video: https://vimeo.com/684389799/5ebae17b72
+ - Video: https://vimeo.com/764698153/763b5a3e74
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w6d2-full-w3d2-crud-with-express
 
 
