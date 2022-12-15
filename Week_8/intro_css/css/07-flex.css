@@ -1,0 +1,10 @@
+ul { /* Select the parent; the children flex! */
+
+    display: flex;
+
+    flex-direction: row; /* items go across, not up and down now */
+
+    flex-wrap: wrap; /* should elements go on a new-line when there is no space left? */
+
+    justify-content: space-evenly; /* spread the children elements out */
+}

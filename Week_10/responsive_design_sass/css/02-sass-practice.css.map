@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/02-sass-practice.scss","../scss/_variables.scss","../scss/_mixins.scss"],"names":[],"mappings":"AAOA;EACI,OCRY;ECGZ;EACA;;;AFQJ;EETI;EACA;;;AFYJ;EAEI;;;AAGJ;EACI;;AAEA;EACI,OCzBQ;ED0BR;;AAEA;EACI,OC5BC;ED6BD;;AAEA;EACI,OC/BF;EDgCE","file":"02-sass-practice.css"}

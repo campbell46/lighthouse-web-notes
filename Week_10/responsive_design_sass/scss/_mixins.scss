@@ -1,0 +1,6 @@
+// Mixins can have parameters with default values
+// You can have multiple parameters, comma-separated
+@mixin standOut($borderStyle: solid) {
+    font-weight: bold;
+    border-bottom: 5px $borderStyle yellow;
+}

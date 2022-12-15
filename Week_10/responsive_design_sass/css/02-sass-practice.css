@@ -1,0 +1,32 @@
+h1 {
+  color: rgb(255, 0, 234);
+  font-weight: bold;
+  border-bottom: 5px solid yellow;
+}
+
+h2 {
+  font-weight: bold;
+  border-bottom: 5px dashed yellow;
+}
+
+body {
+  width: calc(100px - 10em);
+}
+
+ul {
+  list-style: square;
+}
+ul li {
+  color: rgb(255, 0, 234);
+  background-color: white;
+}
+ul li a {
+  color: blue;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=02-sass-practice.css.map */

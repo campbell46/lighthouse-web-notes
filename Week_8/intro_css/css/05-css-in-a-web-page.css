@@ -1,0 +1,18 @@
+/* html {
+    background: salmon;
+} */
+
+/* SELECTOR {
+    PROPERTYNAME: VALUE;
+    PROPERTYNAME: VALUE;
+    PROPERTYNAME: VALUE;
+} */
+
+#third-li {
+    color: blue;
+}
+
+/**
+ * 1. Most specific selector style wins.
+ * 2. In the case of equal selection weight; last rule wins.
+ */

@@ -1,0 +1,39 @@
+// html {background-color: saddlebrown;}
+
+@use "sass:math";
+
+@import 'variables';
+@import 'mixins';
+
+h1 {
+    color: $primary-color;
+    @include standOut;
+}
+
+h2 {
+    @include standOut(dashed);
+}
+
+body {
+    // width: calc(100% - 10em);
+    width: calc(100px - 10em);
+}
+
+ul {
+    list-style: square;
+
+    li {
+        color: $primary-color;
+        background-color: white;
+
+        a {
+            color: $link-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}

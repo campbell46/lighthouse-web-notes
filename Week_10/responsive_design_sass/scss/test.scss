@@ -1,0 +1,17 @@
+html {
+    font-family: Arial;
+}
+
+/* Let's try a nested selector... */
+
+ul {
+    li { // LI text will be red.
+        color: red;
+
+        &:hover {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}

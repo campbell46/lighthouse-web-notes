@@ -1,0 +1,15 @@
+html {
+  font-family: Arial;
+}
+
+/* Let's try a nested selector... */
+ul li {
+  color: red;
+}
+ul li:hover {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=test.css.map */

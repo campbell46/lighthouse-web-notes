@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: black;
+    font-size: 16px;
+}
+
+/* #header,
+#navigation,
+#services,
+#about-us,
+#contact,
+#gallery,
+#footer {
+
+} */
+
+body > * {
+    height: 10rem;
+}
+
+
+#header { background-color: lightsalmon; }
+#navigation { background-color: paleturquoise; }
+#services { background-color: lightgreen; }
+#about-us { background-color: lightcoral; }
+#contact { background-color: yellow; }
+#gallery { background-color: darkolivegreen; }
+#footer { background-color: burlywood; }
+
+/* Main Styles: */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+    order: -1;
+}
+
+/* If screen is 400px OR GREATER, apply these styles: */
+@media screen and (min-width: 400px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body > * {
+        width: 100%;
+    }
+
+    #services,
+    #about-us {
+        width: 50%;
+    }
+}
+
+/* If screen is 1024px OR GREATER, apply these styles: */
+@media screen and (min-width: 1024px) {
+    #navigation {
+        order: 0;
+    }
+
+    #services,
+    #about-us,
+    #contact {
+        width: calc(100% / 3);
+    }
+}
+
+/* Print-only: */
+@media print {
+    * {
+        background-color: white;
+        width: 100%;
+        max-height: 100px;
+    }
+
+    #navigation {
+        display: none;
+    }
+}

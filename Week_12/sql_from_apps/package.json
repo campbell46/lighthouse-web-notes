@@ -1,0 +1,32 @@
+{
+  "name": "lighthouse-labs-sql-from-our-apps",
+  "version": "1.0.0",
+  "description": "PG package practice in Node.js app",
+  "main": "cli-villains.js",
+  "scripts": {
+    "serve": ".\\node_modules\\.bin\\nodemon .\\express-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarrenUhrich/lighthouse-labs-sql-from-our-apps.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "PG"
+  ],
+  "author": "Warren Uhrich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarrenUhrich/lighthouse-labs-sql-from-our-apps/issues"
+  },
+  "homepage": "https://github.com/WarrenUhrich/lighthouse-labs-sql-from-our-apps#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  }
+}

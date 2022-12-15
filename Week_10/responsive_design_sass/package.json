@@ -1,0 +1,21 @@
+{
+  "name": "lighthouse-labs-responsive-design-and-sass",
+  "version": "1.0.0",
+  "description": "* [X] Responsive Design—what is it and why incorporate it?\r * [X] Media Queries\r * [X] Units in CSS\r * [ ] Preprocessors\r * [ ] Writing Sassy CSS (SCSS)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarrenUhrich/lighthouse-labs-responsive-design-and-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarrenUhrich/lighthouse-labs-responsive-design-and-sass/issues"
+  },
+  "homepage": "https://github.com/WarrenUhrich/lighthouse-labs-responsive-design-and-sass#readme"
+}
