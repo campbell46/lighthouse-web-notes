@@ -27,6 +27,7 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
 * [Week 7](/Week_07)
   * [HTTP Cookies & User Authentication](/Week_07/http_cookies_user_authentication)
   * [Security and Real World HTTP Servers](/Week_07/security_real_world_http_servers)
+  * [Career Advice with KV Breakout](Week_07/breakout_with_kv)
 * [Week 8](/Week_08)
   * [Intro to CSS](/Week_08/intro_css)
   * [Client Side Javascript & jQuery](/Week_08/client_side_js_jquery)
