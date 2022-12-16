@@ -41,6 +41,7 @@ This repository contains all of the notes taken by [Sarah](https://github.com/ca
   * [SQL Intro](/Week_11/sql_intro)
   * [Database Design](/Week_11/database_design)
 * [Week 12](/Week_12)
-  * [SQL From Our Apps](/Week_12/sql_from_apps)
+  * [SQL from our Apps](/Week_12/sql_from_apps)
 * [Week 13](/Week_13)
   * [LightBnB Q&A](/Week_13/lighthouse_bnb_q&a)
+  * [Learning how to learn & Problem Solving](Week_13/learning_to_learn_breakout)
